@@ -1,0 +1,800 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior: smooth;
+}
+
+
+body {
+      background: rgb(13,28,87);
+      background: linear-gradient(347deg, rgba(13,28,87,1) 41%, rgba(5,49,106,1) 67%, rgba(47,68,149,1) 85%);
+      background-repeat: no-repeat;
+}
+
+header {
+      color: rgb(21, 175, 226);
+      position: sticky;
+      top: 0;
+      background-color: rgb(33, 62, 179);
+      padding: 10px 0;
+}
+
+
+.logo {
+      margin-right: 500px;
+}
+
+
+/* nav h1 {
+      position: relative;
+      margin-right: 130px;
+      cursor: pointer;
+} */
+
+header nav {
+      text-align: center;
+}
+
+
+header nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 40px;
+      position: relative;
+      margin-left: 70px;
+}
+
+
+nav ul {
+      display: flex;
+      list-style: none;
+      gap: 60px;
+}
+
+nav ul li a {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+}
+
+
+/* home  */
+
+
+.home {
+      transition: all;
+      transition-duration: 300ms;
+      border-bottom: 1px solid rgba(0, 169, 225, 0);
+      padding: 0.5rem 0;
+}
+
+.home:hover {
+      color: rgb(0, 169, 225);
+      border-bottom: 1px solid rgb(0, 169, 225);
+      position: relative;
+}
+
+
+
+.learning {
+      transition: all;
+      transition-duration: 300ms;
+      border-bottom: 1px solid rgba(0, 169, 225, 0);
+      padding: 0.5rem 0;
+}
+
+.learning:hover {
+      color: rgb(0, 169, 225);
+      border-bottom: 1px solid rgb(0, 169, 225);
+      position: relative;
+}
+
+
+.goal {
+      transition: all;
+      transition-duration: 300ms;
+      border-bottom: 1px solid rgba(0, 169, 225, 0);
+      padding: 0.5rem 0;
+}
+
+
+
+.goal:hover {
+      color: rgb(0, 169, 225);
+      border-bottom: 1px solid rgb(0, 169, 225);
+      position: relative;
+}
+
+
+.contack {
+      transition: all;
+      transition-duration: 300ms;
+      border-bottom: 1px solid rgba(0, 169, 225, 0);
+      padding: 0.5rem 0;
+}
+
+.contack:hover {
+      color: rgb(0, 169, 225);
+      border-bottom: 1px solid rgb(0, 169, 225);
+      position: relative;
+}
+
+
+#section-home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 180px;
+      height: 800px;
+      color: white;
+      background-color: rgb(47, 67, 148);
+}
+
+.Gr {
+      position: relative;
+      overflow: hidden;
+}
+
+.Gr::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color:rgb(47, 67, 148);
+      border-left: 2px solid rgb(0, 169, 225);
+      animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+      40%, 60% {
+            left: calc(100% + 4px);
+      }
+      100% {
+            left: 0%;
+      }
+}
+
+#section-home h2 h1 {
+      position: absolute;
+}
+
+.section-home-satu h1 a {
+      color: rgb(0, 169, 225);
+}
+
+#section-home img {
+      width: 300px;
+      border-radius:  50px 50px 150px 145px;
+      cursor: pointer;
+      box-shadow: 0 0 1px 0 rgb(0, 169, 225);
+      transition: all;
+      transition-duration: 300ms;
+      z-index: 1;
+}
+
+#section-home img:hover {
+      box-shadow: 0 5px 50px 0 rgb(0, 169, 225);
+      transform: scale(1.1);
+}
+
+.section-home-satu {
+      position: relative;
+      bottom: 60px;
+}
+
+.section-home-satu h2 {
+      font-size: 30px;
+      padding: 10px 0;
+}
+
+.section-home-satu h1 {
+      font-size: 50px;
+}
+
+.section-home-satu h4 {
+      padding-top: 20px;
+      width: 500px;
+}
+
+.section-home-satu div {
+      position: relative;
+      top: 80px;
+}
+
+
+.button1 {
+      background-color: rgb(0, 169, 225);
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      padding: 10px 30px;
+      bottom: 100px;
+      font-weight: bold;
+      transition: all;
+      transition-duration: 300ms;
+}
+
+.button1:hover {
+      background-color: aliceblue;
+      color: rgb(0, 169, 225);
+}
+
+
+/* learning */
+
+
+.scroll-bar {
+      display: flex;
+      height: 800px;
+      align-items: center;
+      padding: 0 50px;
+      gap: 50px;
+      overflow-x: scroll;
+}
+
+
+.scroll-bar h1 a {
+      color: rgb(0, 169, 225);
+}
+
+.section-learning-satu {
+      background-color: rgba(4, 57, 125, 0.574);
+      width: 1200px;
+      height: 300px;
+      text-align: center;
+      border-radius: 10px;
+      color: rgb(191, 191, 191);
+      transition: all;
+      transition-duration: 300ms;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 100px;
+}
+.section-learning-satu:hover {
+      box-shadow: 0 0 30px 0 rgb(0, 169, 225);
+      transition: ease-in-out 0.3s;
+      transform: scale(0.9);
+}
+
+
+.section-learning-satu img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+}
+
+.section-learning-satu h1 {
+      margin-top: 20px;
+}
+
+
+.section-learning-dua {
+      background-color: rgba(4, 57, 125, 0.574);
+      width: 1200px;
+      height: 300px;
+      text-align: center;
+      border-radius: 10px;
+      color: rgb(191, 191, 191);
+      transition: all;
+      transition-duration: 300ms;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 100px;
+}
+.section-learning-dua:hover {
+      box-shadow: 0 0 30px 0 rgb(0, 169, 225);
+      transition: ease-in-out 0.3s;
+      transform: scale(0.9);
+}
+
+
+.section-learning-dua img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+}
+
+.section-learning-dua h1 {
+      margin-top: 20px;
+}
+
+
+.section-learning-tiga {
+      background-color: rgba(4, 57, 125, 0.574);
+      width: 1200px;
+      height: 300px;
+      text-align: center;
+      border-radius: 10px;
+      color: rgb(191, 191, 191);
+      transition: all;
+      transition-duration: 300ms;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 100px;
+}
+.section-learning-tiga:hover {
+      box-shadow: 0 0 30px 0 rgb(0, 169, 225);
+      transition: ease-in-out 0.3s;
+      transform: scale(0.9);
+}
+
+
+.section-learning-tiga img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+}
+
+.section-learning-tiga h1 {
+      margin-top: 20px;
+}
+
+
+.left {
+      position: absolute;
+      top: 1230px;
+      left: 15px;
+      z-index: 1;
+}
+
+.left img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+}
+
+.right {
+      position: absolute;
+      top: 1230px;
+      right: 15px;
+      z-index: 1;
+}
+
+.right img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+}
+
+
+/* goals  */
+
+
+#section-goal {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-around;
+      gap: 100px;
+      padding: 200px 0;
+      color: aliceblue;
+      background-color: rgb(47, 67, 148);
+}
+
+
+
+.section-goal-satu h1 {
+      padding-top: 20px;
+}
+
+.section-goal-satu h1 span {
+      color: rgb(0, 169, 225);
+}
+
+
+.section-goal-satu img {
+      width: 400px;
+}
+
+.section-goal-dua h1 {
+      padding-top: 20px;
+}
+
+.section-goal-dua h1 span {
+      color: rgb(0, 169, 225);
+}
+
+.section-goal-dua img {
+      width: 400px;
+}
+
+
+.koding {
+      padding: 20px;
+      cursor: pointer;
+}
+
+.koding a {
+      text-decoration: none;
+      color: aliceblue;
+      background-color: rgb(0, 169, 225);
+      padding: 10px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all;
+      transition-duration: 300ms;
+}
+
+.koding a:hover {
+      background-color: aliceblue;
+      color: rgb(0, 169, 225);
+}
+
+.kale {
+      padding: 20px;
+      cursor: pointer;
+}
+
+.kale a {
+      text-decoration: none;
+      color: aliceblue;
+      background-color: rgb(0, 169, 225);
+      padding: 10px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all;
+      transition-duration: 300ms;
+}
+
+.kale a:hover {
+      background-color: aliceblue;
+      color: rgb(0, 169, 225);
+}
+
+
+
+/* contack */
+
+#section-contack {
+      height: 400px;
+      padding: 60px 0;
+      background-color: rgb(3, 48, 107);
+}
+
+#section-contack h2 {
+      text-align: center;
+      padding-bottom: 60px;
+      color: rgb(0, 169, 225);
+}
+
+.contack-satu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 200px;
+      color: rgb(202, 194, 194);
+}
+
+.section-contack-satu {
+      display: flex;
+}
+
+.section-contack-satu img {
+      width: 50px;
+      height: 50px;
+}
+
+.address {
+      display: flex;
+      gap: 40px;
+      padding: 20px;
+}
+
+.address a {
+      color: rgb(0, 169, 225);
+} 
+
+.address img {
+      cursor: pointer;
+}
+
+
+
+
+#check {
+      display: none;
+}
+
+.icon {
+      position: absolute;
+      right: 0;
+      font-size: 2em;
+      color: aliceblue;
+      cursor: pointer;
+      display: none;
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+
+      .logo {
+            left: 50px;
+      }
+
+      .navbar {
+            gap: 50px;
+            position: relative;
+            right: 100px;
+      }
+
+      #section-home {
+            padding: 0 100px;
+      }
+      #section-home img{
+            width: 250px;
+      }
+
+      .section-home-satu h2 {
+            font-size: 20px;
+      }
+
+      .section-home-satu h1 {
+            font-size: 40px;
+      }
+
+      .section-home-satu h4 {
+            font-size: 15px;
+      }
+
+      #section-about {
+            padding: 0 100px;
+      }
+      #section-about img {
+            height: 380px;
+      }
+
+      #section-learning {
+            padding: 0 100px;
+      }
+
+      .section-learning-satu {
+            padding: 0 50px;
+      }
+      .section-learning-satu p{
+            font-size: 13px;
+      }
+
+      .section-learning-dua {
+            padding: 0 50px;
+      }
+      .section-learning-dua p{
+            font-size: 13px;
+      }
+
+      .section-learning-tiga {
+            padding: 0 50px;
+      }
+      .section-learning-tiga {
+            font-size: 13px;
+      }
+}
+
+
+
+@media screen and (max-width:991px) {
+      .section-home-satu .gerak {
+            font-size: 25px;
+      }
+
+      .section-home-satu .pr {
+            font-size: 20px;
+      }
+
+      .logo {
+            margin-right: 100vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+      }
+
+      .icon {
+            display: block;
+            margin-right: 50px;
+      }
+
+      #check:checked~.icon #menu-icon {
+            display: none;
+      }
+
+      #close-icon {
+            display: none;
+      }
+
+      #check:checked~.icon #close-icon {
+            display: block;
+      }
+
+      .navbar{
+            position: fixed;
+            right: 0;
+            top: 60px;
+            width: 35%;
+            height: 0;
+            display: block;
+            background-color: rgb(0, 0, 0);
+            border-radius: 0 0 0 12px;
+            transition: .4s ease;
+            overflow: hidden;
+      }
+
+      #check:checked~.navbar {
+            height: 17.7rem;
+      }
+
+      nav ul li {
+            display: flex;
+            margin: 30px 0;
+            align-items: center;
+            justify-content: center;
+      }
+
+/* home        */
+
+      #section-home{
+            padding: 0 50px;
+            gap: 70px;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            padding-top: 80px;
+
+      }
+      #section-home img {
+            width: 250px;
+            align-items: center;
+      }
+
+
+      .section-home-satu {
+            text-align: center;
+            position: relative;
+            bottom: 150px;
+      }
+
+      .section-home-satu h2 {
+            font-size: 30px;
+      }
+
+      .section-home-satu h1 {
+            font-size: 35px;
+      }
+
+      .section-home-satu h4 {
+            font-size: 15px;
+      }
+
+      /* .button1 {
+            right: 300px;
+      } */
+
+
+/* about  */
+
+      #section-about img {
+            width: 350px;
+            height: 300px;
+      }
+      .section-about-satu h1 {
+            font-size: 25px;
+      }
+
+
+
+/* learning  */
+
+
+
+
+/* achievement  */
+
+      #section-goal {
+            flex-direction: column;
+      }
+
+
+
+      /* contack  */
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width:991px) {
+      .section-contack-satu {
+            flex-direction: column;
+      }
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+      .logo {
+            position: relative;
+            left: 200px;
+      }
+
+      .icon {
+            margin-right: 0;
+      }
+
+      /* home  */
+
+
+      /* about  */
+      #section-about {
+            display: block;
+      }
+
+      /* secvices  */
+      #section-learning {
+            display: block;
+      }
+
+      /* contack  */
+      .section-contack {
+            display: block;
+      }
+}
+
+
+@media screen and (max-width: 360px) {
+      .logo {
+            position: relative;
+            left: 250px;
+      }
+
+      .icon {
+            margin-right: 20px;
+      }
+
+      .navbar{
+            position: fixed;
+            left: 0;
+            top: 60px;
+            width: 63%;
+            height: 0;
+            display: block;
+            background-color: rgb(0, 0, 0);
+            border-radius: 0 0 12px 12px;
+            transition: .4s ease;
+            overflow: hidden;
+      }
+
+      #check:checked~.navbar {
+            height: 17.7rem;
+      }
+}
+
+
+
+.footer {
+      padding: 20px;
+      text-align: center;
+      color: rgb(113, 114, 116);
+}
